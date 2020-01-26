@@ -4,7 +4,7 @@
 
 Inicjalizacja projektu
 
-[](https://raw.githubusercontent.com/jakubgania/business-page-project-2/master/screenshots/screen-1.PNG)
+![](https://raw.githubusercontent.com/jakubgania/business-page-project-2/master/screenshots/screen-1.PNG)
 
 ## Build Setup
 
