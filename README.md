@@ -2,10 +2,24 @@
 
 >
 
+Tasks done
+
 - :heavy_check_mark: Utworzenie repozytorium
 - :heavy_check_mark: Inicjalizacja projektu
 
+To do
+
 - :heavy_minus_sign: Wyczyścić pliki z domyślnego kodu
+- :heavy_minus_sign: zrobić środowisko testowe
+- :heavy_minus_sign: przemyśleć czy cały projekt na jednej stronie czy na kilku podstronach
+
+Comments
+
+- zakomentowanie modułu - '@nuxtjs/stylelint-module' - generował błąd
+
+Time worked
+
+- 01/26/2020 | 10:20 - 23:00 | 40m
 
 ![](https://raw.githubusercontent.com/jakubgania/business-page-project-2/master/screenshots/screen-1.PNG)
 
