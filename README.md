@@ -12,6 +12,10 @@ To do
 - :heavy_minus_sign: Wyczyścić pliki z domyślnego kodu
 - :heavy_minus_sign: zrobić środowisko testowe
 - :heavy_minus_sign: przemyśleć czy cały projekt na jednej stronie czy na kilku podstronach
+- :heavy_minus_sign: na sam koniec developmentu :
+  - dodać metatagi open graph
+  - dodać moduł google analytics + utworzyć konto
+  - dodać cloudflare - https/2
 
 Comments
 
