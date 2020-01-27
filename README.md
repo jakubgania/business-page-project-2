@@ -6,6 +6,7 @@ Tasks done
 
 - :heavy_check_mark: Utworzenie repozytorium
 - :heavy_check_mark: Inicjalizacja projektu
+- :heavy_check_mark: usunięcie domyślnych bloków kodu i niepotrzebnych plików
 
 To do
 
@@ -16,6 +17,7 @@ To do
   - :heavy_minus_sign: dodać metatagi open graph
   - :heavy_minus_sign: dodać moduł google analytics + utworzyć konto
   - :heavy_minus_sign: dodać cloudflare - https/2
+- :heavy_minus_sign: zaprojektować favicona + ikonki
 
 Comments
 
@@ -24,6 +26,7 @@ Comments
 Time worked
 
 - 01/26/2020 | 10:20 - 23:00 | 40m
+- 01/27/2020 | 11:23 - 
 
 ![](https://raw.githubusercontent.com/jakubgania/business-page-project-2/master/screenshots/screen-1.PNG)
 
