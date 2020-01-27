@@ -7,6 +7,7 @@ Tasks done
 - :heavy_check_mark: Utworzenie repozytorium
 - :heavy_check_mark: Inicjalizacja projektu
 - :heavy_check_mark: usunięcie domyślnych bloków kodu i niepotrzebnych plików
+- :heavy_check_mark: instalacja modułów - node-sass i sass-loader
 
 To do
 
@@ -22,6 +23,7 @@ To do
 Comments
 
 - zakomentowanie modułu - '@nuxtjs/stylelint-module' - generował błąd
+- instalacja odpowiednich modułów do obsługi SCSS
 
 Time worked
 
