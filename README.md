@@ -27,8 +27,8 @@ Comments
 
 Time worked
 
-- 01/26/2020 | 10:20 - 23:00 | 40m
-- 01/27/2020 | 11:23 - 
+- 01/26/2020 | 22:20 - 23:00 | 40m
+- 01/27/2020 | 23:23 - 23:46 | 23m 
 
 ![](https://raw.githubusercontent.com/jakubgania/business-page-project-2/master/screenshots/screen-1.PNG)
 
