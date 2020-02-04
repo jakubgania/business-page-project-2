@@ -23,22 +23,48 @@
           {{ description }}
         </div>
       </div>
+      <b-row class="image-section">
+        <b-col lg="6">
+          <b-img src="../assets/images/img2.jpg" fluid class="image"></b-img>
+        </b-col>
+        <b-col lg="6">
+          <b-img src="../assets/images/roleta-pvc.png" fluid class="image">
+          </b-img>
+        </b-col>
+      </b-row>
       <div>
         <div class="title-section">
           Zakres usług
         </div>
-        <div v-for="item in services" :key="item.id">
-          <div>
-            <span>
-              {{ item }}
-            </span>
-          </div>
-        </div>
+        <ul class="service-list">
+          <li
+            v-for="item in services"
+            :key="item.id"
+            class="service-list__item"
+          >
+            <i class="material-icons service-list--icon">
+              keyboard_arrow_right
+            </i>
+            {{ item }}
+          </li>
+        </ul>
       </div>
       <div>
         <div class="title-section">
           Informaje dodatkowe
         </div>
+        <ul class="service-list">
+          <li
+            v-for="item in additionalInformation"
+            :key="item.id"
+            class="service-list__item"
+          >
+            <i class="material-icons service-list--icon">
+              keyboard_arrow_right
+            </i>
+            {{ item }}
+          </li>
+        </ul>
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113279.93463273442!2d16.897845156905976!3d51.142463957758494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1507373970591"
@@ -88,6 +114,14 @@ export default {
         'Przeróbki okien z otwieranych na otwieralno-uchylane',
         'Szlifowanie szyb',
         'Inne usterki związane z stolarką'
+      ],
+      additionalInformation: [
+        'Dojazd do klienta na terenie Dolnego Śląska',
+        'Gdy nie mogę odebrać telefonu staram się jak najszybciej oddzwonić',
+        'Ważne jest dla mnie zadowlenie klienta dlatego sumiennie wykonuję powierzone mi zadania',
+        'Rzetelne określenie potrzeb naprawd w sytuacji usterki',
+        'W razie wątpliwosci i pytań oferuje fachowe doradztwo w zarkresie pełnionych usług',
+        'Obszar dojazdu : Wrocław i okolice'
       ],
       topWords: [
         'Montaż okien',
@@ -148,6 +182,7 @@ export default {
   background-size: cover;
   width: 100%;
   height: 600px;
+  margin-bottom: 80px;
 }
 .top-image-content {
   max-width: 1200px;
@@ -178,5 +213,44 @@ export default {
 .title-section {
   color: #182c36;
   font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  &__item {
+    // background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    cursor: default;
+  }
+
+  &__item:hover {
+    background-color: #f2f2f2;
+    transition: background-color 0.2s easy;
+    padding-left: 14px;
+    transition: padding-left 0.2s easy;
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+  }
+
+  &--icon {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+}
+.image-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.image {
+  max-height: 380px;
 }
 </style>

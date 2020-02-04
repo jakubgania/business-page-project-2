@@ -23,7 +23,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'node_modules/material-design-icons/iconfont/material-icons.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
