@@ -8,7 +8,18 @@
       </div>
     </div>
     <div class="container">
-      top image
+      <div id="o-firmie">
+        o firmie
+      </div>
+      <div id="zakres-uslug">
+        zakres usług
+      </div>
+      <div id="informacje-dodatkowe">
+        informaje dodatkowe
+      </div>
+      <div>
+        kontakt
+      </div>
     </div>
   </div>
 </template>
@@ -28,7 +39,7 @@ export default {
 <style>
 .container {
   max-width: 1000px;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 </style>
 
