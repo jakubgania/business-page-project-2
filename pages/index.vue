@@ -3,7 +3,7 @@
     <div class="top-image">
       <div class="top-image-content">
         <div class="top-image-content--text">
-          Okna System Serwis
+          Okna - System - Serwis
         </div>
         <div class="fullname-text">
           Tomasz Liebner
@@ -86,6 +86,10 @@
       <div id="kontakt">
         <div class="title-section">
           Kontakt
+        </div>
+        <div style="margin-bottom: 40px;">
+          W przypadku pytań proszę o kontakt na poniżej podany numer telefonu
+          lub adres e-mail.
         </div>
         <b-row class="contact-section">
           <b-col lg="6" style="padding-right: 0;padding-right: 2px;">
@@ -297,9 +301,9 @@ export default {
 
     &:hover {
       background-color: #f2f2f2;
-      transition: background-color 1s easy;
+      transition: background-color 0.2s ease;
       padding-left: 14px;
-      transition: padding-left 1s easy;
+      transition: padding-left 0.2s ease;
     }
   }
 
