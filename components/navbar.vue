@@ -21,7 +21,8 @@
 
 <style lang="scss" scoped>
 .navbar-title {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 17px;
 }
 .anchor-link {
   font-size: 12px;
