@@ -17,6 +17,8 @@
 <style lang="scss" scope>
 .footer-wrapper {
   background-color: #ebf0fa;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .footer-content {
   display: flex;

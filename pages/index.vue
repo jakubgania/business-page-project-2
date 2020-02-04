@@ -5,6 +5,13 @@
         <div class="top-image-content--text">
           Okna System Serwis
         </div>
+        <div style="height: 20px;">
+          <transition name="fade">
+            <p v-if="show" class="word-changer">
+              {{ wordChanger }}
+            </p>
+          </transition>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -19,6 +26,13 @@
       <div>
         <div class="title-section">
           Zakres usług
+        </div>
+        <div v-for="item in services" :key="item.id">
+          <div>
+            <span>
+              {{ item }}
+            </span>
+          </div>
         </div>
       </div>
       <div>
@@ -54,8 +68,64 @@ export default {
     return {
       topImage,
       description:
-        'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. W swojej bogatej ofercie świadczymy kompleksową regulację okien i drzwi - plastikowych (PCV), aluminiowych (ALU) oraz drewnianych. Dodatkowo serwisujemy rolety, usuwamy zarysowania, a także zajmujemy się konserwacją okuć. Więcej o świadczonych przez nas usługach znajdziesz w zakładce „Zakres usług". Z pewnością nasz zróżnicowany serwis zaspokoi twoje wszelkie oczekiwania.'
+        'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. W swojej bogatej ofercie świadczymy kompleksową regulację okien i drzwi - plastikowych (PCV), aluminiowych (ALU) oraz drewnianych. Dodatkowo serwisujemy rolety, usuwamy zarysowania, a także zajmujemy się konserwacją okuć. Więcej o świadczonych przez nas usługach znajdziesz w zakładce „Zakres usług". Z pewnością nasz zróżnicowany serwis zaspokoi twoje wszelkie oczekiwania.',
+      services: [
+        'Montaż okien, drzwi i parapetów',
+        'Serwis rolet',
+        'Regulacja okien i drzwi:',
+        'PCV (plastikowych)',
+        'ALU (aluminiowych)',
+        'Drewnianych',
+        'Koserwacja okuć',
+        'Usuwanie zarysowań oraz ubytków na profilach PCV za pomocą wosku',
+        'Przeróbki okien:',
+        'Dodatkowe funkcje antywłamaniowe',
+        'Funkcje uchylania',
+        'Wymiana uszkodzonych elementów okuć',
+        'Wymiana szyb zespolonych',
+        'Wymianę uszczelek',
+        'Montaż nawiewników okiennych różnych typów',
+        'Przeróbki okien z otwieranych na otwieralno-uchylane',
+        'Szlifowanie szyb',
+        'Inne usterki związane z stolarką'
+      ],
+      topWords: [
+        'Montaż okien',
+        'Serwis rolet',
+        'Regulacja okien i drzwi',
+        'Konserwacja okuć',
+        'Usuwanie zarysowań',
+        'Przeróbki okien',
+        'Wymiana uszkodzonych elementów',
+        'Funkcje uchylania',
+        'Montaż nawiewników',
+        'Szlifowanie',
+        'Usterki stolarskie',
+        'Dojazd do klienta'
+      ],
+      counter: 0,
+      show: false
     }
+  },
+  computed: {
+    wordChanger() {
+      if (this.counter === this.topWords.length) {
+        this.resetCounter()
+      }
+      console.log(this.counter)
+      return this.topWords[this.counter]
+    }
+  },
+  methods: {
+    resetCounter() {
+      this.counter = 0
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.show = !this.show
+      if (this.show) ++this.counter
+    }, 2400)
   }
 }
 </script>
@@ -63,7 +133,6 @@ export default {
 <style>
 .container {
   max-width: 1000px;
-  /* background-color: bisque; */
 }
 </style>
 
@@ -97,6 +166,11 @@ export default {
     font-size: 3vw;
     font-weight: 800;
   }
+}
+.word-changer {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 .content-subsection {
   //
