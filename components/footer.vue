@@ -5,7 +5,7 @@
         <div>
           OKNA - SYSTEM - SERWIS | &copy; 2017 - 2020
         </div>
-        <div class="float-right">
+        <div class="ml-auto">
           Wykonanie -
           <a href="https://jakubgania.io">jakubgania.io</a>
         </div>
@@ -20,8 +20,5 @@
 }
 .footer-content {
   display: flex;
-}
-.float-right {
-  float: right;
 }
 </style>
