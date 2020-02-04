@@ -5,16 +5,19 @@
         <div class="top-image-content--text">
           Okna System Serwis
         </div>
-        <div style="height: 20px;">
-          <transition name="fade">
-            <p v-if="show" class="word-changer">
-              {{ wordChanger }}
-            </p>
-          </transition>
+        <div class="fullname-text">
+          Tomasz Liebner
         </div>
       </div>
     </div>
     <div class="container">
+      <div style="height: 20px;text-align: center;">
+        <transition name="fade">
+          <p v-if="show" class="word-changer">
+            {{ wordChanger }}
+          </p>
+        </transition>
+      </div>
       <div>
         <div class="title-section">
           O firmie
@@ -49,6 +52,9 @@
           </li>
         </ul>
       </div>
+      <div class="image-section">
+        <b-img src="../assets/images/Engineering-Background.jpg" fluid></b-img>
+      </div>
       <div>
         <div class="title-section">
           Informaje dodatkowe
@@ -81,6 +87,20 @@
         <div class="title-section">
           Kontakt
         </div>
+        <b-row class="contact-section">
+          <b-col lg="6" style="padding: 0;padding-right: 2px;">
+            <div class="contact-item">
+              <i class="material-icons contact-item__icon">phone_iphone</i>
+              721 648 839
+            </div>
+          </b-col>
+          <b-col lg="6" style="padding: 0;">
+            <div class="contact-item">
+              <i class="material-icons contact-item__icon">email</i>
+              okna.system.serwis@gmail.com
+            </div>
+          </b-col>
+        </b-row>
       </div>
     </div>
   </div>
@@ -178,8 +198,10 @@ export default {
   top: 0;
   left: 0;
   background-image: url(./../assets/images/top-image.jpg);
+  // background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 600px;
   margin-bottom: 80px;
@@ -202,10 +224,16 @@ export default {
     font-weight: 800;
   }
 }
-.word-changer {
+.fullname-text {
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
+}
+.word-changer {
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 20px;
 }
 .content-subsection {
   //
@@ -227,13 +255,17 @@ export default {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
     cursor: default;
-  }
+    background-color: white;
+    padding-left: 0;
+    transition: background-color 1s easy;
+    transition: padding-left 1s easy;
 
-  &__item:hover {
-    background-color: #f2f2f2;
-    transition: background-color 0.2s easy;
-    padding-left: 14px;
-    transition: padding-left 0.2s easy;
+    &:hover {
+      background-color: #f2f2f2;
+      transition: background-color 1s easy;
+      padding-left: 14px;
+      transition: padding-left 1s easy;
+    }
   }
 
   &__item:last-child {
@@ -252,5 +284,19 @@ export default {
 }
 .image {
   max-height: 380px;
+}
+.contact-section {
+  margin-bottom: 60px;
+}
+.contact-item {
+  background-color: black;
+  height: 140px;
+  color: white;
+  text-align: center;
+  line-height: 140px;
+
+  &__icon {
+    vertical-align: middle;
+  }
 }
 </style>
