@@ -18,7 +18,7 @@
           </p>
         </transition>
       </div>
-      <div>
+      <div id="o-firmie">
         <div class="title-section">
           O firmie
         </div>
@@ -35,7 +35,7 @@
           </b-img>
         </b-col>
       </b-row>
-      <div>
+      <div id="uslugi">
         <div class="title-section">
           Zakres usług
         </div>
@@ -55,7 +55,7 @@
       <div class="image-section">
         <b-img src="../assets/images/Engineering-Background.jpg" fluid></b-img>
       </div>
-      <div>
+      <div id="informacje-dodatkowe">
         <div class="title-section">
           Informaje dodatkowe
         </div>
@@ -83,18 +83,18 @@
           </iframe>
         </div>
       </div>
-      <div>
+      <div id="kontakt">
         <div class="title-section">
           Kontakt
         </div>
         <b-row class="contact-section">
-          <b-col lg="6" style="padding: 0;padding-right: 2px;">
+          <b-col lg="6" style="padding-right: 0;padding-right: 2px;">
             <div class="contact-item">
               <i class="material-icons contact-item__icon">phone_iphone</i>
               721 648 839
             </div>
           </b-col>
-          <b-col lg="6" style="padding: 0;">
+          <b-col lg="6" style="padding-left: 0;">
             <div class="contact-item">
               <i class="material-icons contact-item__icon">email</i>
               okna.system.serwis@gmail.com
@@ -158,7 +158,7 @@ export default {
         'Dojazd do klienta'
       ],
       counter: 0,
-      show: false
+      show: true
     }
   },
   computed: {
@@ -177,8 +177,7 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      this.show = !this.show
-      if (this.show) ++this.counter
+      ++this.counter
     }, 2400)
   }
 }
@@ -232,8 +231,8 @@ export default {
 .word-changer {
   color: black;
   letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 20px;
+  // font-weight: 700;
+  font-size: 22px;
 }
 .content-subsection {
   //
@@ -297,6 +296,11 @@ export default {
 
   &__icon {
     vertical-align: middle;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+    transition: transform 0.2s ease;
   }
 }
 </style>

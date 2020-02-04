@@ -8,10 +8,12 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-navbar-nav class="ml-auto">
-        <a href="" class="anchor-link">O firmie</a>
-        <a href="" class="anchor-link">Usługi</a>
-        <a href="" class="anchor-link">Informacje dodatkowe</a>
-        <a href="" class="anchor-link">Kontakt</a>
+        <a href="#o-firmie" class="anchor-link">O firmie</a>
+        <a href="#uslugi" class="anchor-link">Usługi</a>
+        <a href="#informacje-dodatkowe" class="anchor-link">
+          Informacje dodatkowe
+        </a>
+        <a href="#kontakt" class="anchor-link">Kontakt</a>
       </b-navbar-nav>
     </b-navbar>
   </div>
