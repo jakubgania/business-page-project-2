@@ -179,6 +179,42 @@ export default {
     setInterval(() => {
       ++this.counter
     }, 2400)
+  },
+  head() {
+    return {
+      title: 'Okna - System - Serwis | Tomasz Liebner',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: ''
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: ''
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: ''
+        }
+      ]
+    }
   }
 }
 </script>
