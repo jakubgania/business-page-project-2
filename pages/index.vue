@@ -28,11 +28,25 @@
       </div>
       <b-row class="image-section">
         <b-col lg="6">
-          <b-img src="../assets/images/img2.jpg" fluid class="image"></b-img>
+          <div
+            data-aos="fade-right"
+            data-aos-dealy="400"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <b-img src="../assets/images/img2.jpg" fluid class="image"></b-img>
+          </div>
         </b-col>
         <b-col lg="6">
-          <b-img src="../assets/images/roleta-pvc.png" fluid class="image">
-          </b-img>
+          <div
+            data-aos="fade-left"
+            data-aos-dealy="400"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <b-img src="../assets/images/roleta-pvc.png" fluid class="image">
+            </b-img>
+          </div>
         </b-col>
       </b-row>
       <div id="uslugi">
@@ -53,7 +67,15 @@
         </ul>
       </div>
       <div class="image-section">
-        <b-img src="../assets/images/Engineering-Background.jpg" fluid></b-img>
+        <div
+          data-aos="zoom-in"
+          data-aos-dealy="400"
+          data-aos-duration="1200"
+          data-aos-once="true"
+        >
+          <b-img src="../assets/images/Engineering-Background.jpg" fluid>
+          </b-img>
+        </div>
       </div>
       <div id="informacje-dodatkowe">
         <div class="title-section">
@@ -93,15 +115,29 @@
         </div>
         <b-row class="contact-section">
           <b-col lg="6" style="padding-right: 0;padding-right: 2px;">
-            <div class="contact-item">
-              <i class="material-icons contact-item__icon">phone_iphone</i>
-              721 648 839
+            <div
+              data-aos="zoom-in-right"
+              data-aos-dealy="400"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <div class="contact-item">
+                <i class="material-icons contact-item__icon">phone_iphone</i>
+                721 648 839
+              </div>
             </div>
           </b-col>
           <b-col lg="6" style="padding-left: 0;">
-            <div class="contact-item">
-              <i class="material-icons contact-item__icon">email</i>
-              okna.system.serwis@gmail.com
+            <div
+              data-aos="zoom-in-left"
+              data-aos-dealy="400"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <div class="contact-item">
+                <i class="material-icons contact-item__icon">email</i>
+                okna.system.serwis@gmail.com
+              </div>
             </div>
           </b-col>
         </b-row>
@@ -325,7 +361,7 @@ export default {
   max-height: 380px;
 }
 .contact-section {
-  margin-bottom: 60px;
+  padding-bottom: 100px;
 }
 .contact-item {
   background-color: black;
