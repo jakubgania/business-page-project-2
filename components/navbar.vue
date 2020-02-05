@@ -13,6 +13,12 @@
         </a>
         <a href="#kontakt" class="anchor-link">Kontakt</a>
       </b-navbar-nav>
+
+      <b-navbar-nav class="d-block d-sm-block d-md-none">
+        <i class="material-icons navbar-menu-icon">
+          drag_handle
+        </i>
+      </b-navbar-nav>
     </b-navbar>
   </div>
 </template>
@@ -33,6 +39,16 @@
   &:hover {
     color: #0066ff;
     transition: color 0.2s ease;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .navbar-title {
+    font-size: 15px;
+  }
+  .navbar-menu-icon {
+    font-size: 40px;
+    position: relative;
+    top: 4px;
   }
 }
 </style>
