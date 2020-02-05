@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div class="top-image">
-      <div class="top-image-content">
-        <div class="top-image-content--text">
-          Okna - System - Serwis
-        </div>
-        <div class="fullname-text">
-          Tomasz Liebner
+    <div>
+      <div class="top-image">
+        <div class="top-image-content">
+          <div class="top-image-content--text">
+            Okna - System - Serwis
+          </div>
+          <div class="fullname-text">
+            Tomasz Liebner
+          </div>
         </div>
       </div>
     </div>
@@ -26,6 +28,20 @@
           {{ description }}
         </div>
       </div>
+      <b-row class="icons-section">
+        <b-col lg="3" class="icons-section__item">
+          <i class="material-icons icons-section__icon">border_all</i>
+        </b-col>
+        <b-col lg="3" class="icons-section__item">
+          <i class="material-icons icons-section__icon">build</i>
+        </b-col>
+        <b-col lg="3" class="icons-section__item">
+          <i class="material-icons icons-section__icon">settings</i>
+        </b-col>
+        <b-col lg="3" class="icons-section__item">
+          <i class="material-icons icons-section__icon">format_paint</i>
+        </b-col>
+      </b-row>
       <b-row class="image-section">
         <b-col lg="6">
           <div
@@ -114,7 +130,7 @@
           lub adres e-mail.
         </div>
         <b-row class="contact-section">
-          <b-col lg="6" style="padding-right: 0;padding-right: 2px;">
+          <b-col lg="6" style="padding-right: 0;padding-right: 4px;">
             <div
               data-aos="zoom-in-right"
               data-aos-dealy="400"
@@ -142,6 +158,18 @@
           </b-col>
         </b-row>
       </div>
+      <b-row class="image-section">
+        <b-col lg="12" style="text-align: center;">
+          <div
+            data-aos="fade-up"
+            data-aos-dealy="400"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <b-img src="../assets/images/img3.jpg" fluid class="image"></b-img>
+          </div>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
@@ -361,7 +389,7 @@ export default {
   max-height: 380px;
 }
 .contact-section {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 .contact-item {
   background-color: black;
@@ -375,8 +403,29 @@ export default {
   }
 
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     transition: transform 0.2s ease;
+  }
+}
+.icons-section {
+  margin-top: 60px;
+
+  &__item {
+    text-align: center;
+    cursor: default;
+    height: 60px;
+    line-height: 90px;
+
+    &:hover {
+      background-color: black;
+      transition: background-color 0.4s ease;
+      color: white;
+      transition: color 0.4s ease;
+    }
+  }
+
+  &__icon {
+    font-size: 44px;
   }
 }
 </style>
