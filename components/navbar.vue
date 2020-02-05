@@ -5,9 +5,7 @@
         Okna - System - Serwis
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-navbar-nav class="ml-auto">
+      <b-navbar-nav class="ml-auto d-none d-sm-none d-md-block">
         <a href="#o-firmie" class="anchor-link">O firmie</a>
         <a href="#uslugi" class="anchor-link">Usługi</a>
         <a href="#informacje-dodatkowe" class="anchor-link">

@@ -29,21 +29,21 @@
         </div>
       </div>
       <b-row class="icons-section">
-        <b-col lg="3" class="icons-section__item">
+        <b-col cols="3" lg="3" class="icons-section__item">
           <i class="material-icons icons-section__icon">border_all</i>
         </b-col>
-        <b-col lg="3" class="icons-section__item">
+        <b-col cols="3" lg="3" class="icons-section__item">
           <i class="material-icons icons-section__icon">build</i>
         </b-col>
-        <b-col lg="3" class="icons-section__item">
+        <b-col cols="3" lg="3" class="icons-section__item">
           <i class="material-icons icons-section__icon">settings</i>
         </b-col>
-        <b-col lg="3" class="icons-section__item">
+        <b-col cols="3" lg="3" class="icons-section__item">
           <i class="material-icons icons-section__icon">format_paint</i>
         </b-col>
       </b-row>
       <b-row class="image-section">
-        <b-col lg="6">
+        <b-col lg="6" style="text-align: center;">
           <div
             data-aos="fade-right"
             data-aos-dealy="400"
@@ -53,7 +53,7 @@
             <b-img src="../assets/images/img2.jpg" fluid class="image"></b-img>
           </div>
         </b-col>
-        <b-col lg="6">
+        <b-col lg="6" style="text-align: center;">
           <div
             data-aos="fade-left"
             data-aos-dealy="400"
@@ -130,7 +130,7 @@
           lub adres e-mail.
         </div>
         <b-row class="contact-section">
-          <b-col lg="6" style="padding-right: 0;padding-right: 4px;">
+          <b-col lg="6" class="contact-section__tile-phonenumber">
             <div
               data-aos="zoom-in-right"
               data-aos-dealy="400"
@@ -143,7 +143,7 @@
               </div>
             </div>
           </b-col>
-          <b-col lg="6" style="padding-left: 0;">
+          <b-col lg="6" class="contact-section__tile-email">
             <div
               data-aos="zoom-in-left"
               data-aos-dealy="400"
@@ -390,6 +390,15 @@ export default {
 }
 .contact-section {
   padding-bottom: 40px;
+
+  &__tile-phonenumber {
+    padding-right: 0;
+    padding-right: 4px;
+  }
+
+  &__tile-email {
+    padding-left: 0;
+  }
 }
 .contact-item {
   background-color: black;
@@ -426,6 +435,42 @@ export default {
 
   &__icon {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .top-image {
+    height: 400px;
+    margin-bottom: 60px;
+  }
+  .top-image-content {
+    &--text {
+      letter-spacing: 2px;
+      font-size: 5.4vw;
+    }
+  }
+  .title-section {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contact-section {
+    padding-bottom: 40px;
+
+    &__tile-phonenumber {
+      padding-right: 15px;
+      margin-bottom: 2px;
+    }
+
+    &__tile-email {
+      padding-left: 15px;
+    }
+  }
+  .contact-item {
+    height: 80px;
+    line-height: 80px;
+  }
+  .image {
+    max-width: 70%;
   }
 }
 </style>
