@@ -32,7 +32,7 @@
   font-size: 12px;
   font-weight: 600;
   margin-right: 10px;
-  color: black;
+  color: #000;
   letter-spacing: 0.4px;
   text-decoration: none;
 

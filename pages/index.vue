@@ -301,7 +301,6 @@ export default {
   top: 0;
   left: 0;
   background-image: url(./../assets/images/top-image.jpg);
-  // background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -328,14 +327,13 @@ export default {
   }
 }
 .fullname-text {
-  color: white;
+  color: #fff;
   letter-spacing: 1px;
   font-weight: 700;
 }
 .word-changer {
-  color: black;
+  color: #000;
   letter-spacing: 1px;
-  // font-weight: 700;
   font-size: 22px;
 }
 .content-subsection {
@@ -353,12 +351,11 @@ export default {
   margin-bottom: 0;
 
   &__item {
-    // background-color: red;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     cursor: default;
-    background-color: white;
+    background-color: #fff;
     padding-left: 0;
     transition: background-color 1s easy;
     transition: padding-left 1s easy;
@@ -401,9 +398,9 @@ export default {
   }
 }
 .contact-item {
-  background-color: black;
+  background-color: #000;
   height: 140px;
-  color: white;
+  color: #fff;
   text-align: center;
   line-height: 140px;
 
@@ -422,15 +419,6 @@ export default {
   &__item {
     text-align: center;
     cursor: default;
-    height: 60px;
-    line-height: 90px;
-
-    &:hover {
-      background-color: black;
-      transition: background-color 0.4s ease;
-      color: white;
-      transition: color 0.4s ease;
-    }
   }
 
   &__icon {
