@@ -364,7 +364,7 @@ export default {
         {
           name: 'keywords',
           content:
-          'okna, system, serwis, Tomasz Liebner, montaż, okna, rolety, regulacja, drzwi, usterki, szlifowanie, klient, dojazd, przeróbki, zarysowania, nawiewniki, konserwacja'
+            'okna, system, serwis, Tomasz Liebner, montaż, okna, rolety, regulacja, drzwi, usterki, szlifowanie, klient, dojazd, przeróbki, zarysowania, nawiewniki, konserwacja'
         },
         {
           hid: 'og:title',
