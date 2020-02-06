@@ -358,21 +358,23 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ''
+          content:
+            'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi.'
         },
         {
           name: 'keywords',
-          content: ''
+          content:
+          'okna, system, serwis, Tomasz Liebner, montaż, okna, rolety, regulacja, drzwi, usterki, szlifowanie, klient, dojazd, przeróbki, zarysowania, nawiewniki, konserwacja'
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: ''
+          content: 'Okna - System - Serwis | Tomasz Liebner'
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: ''
+          content: 'http://okna-system-serwis.pl'
         },
         {
           hid: 'og:description',
