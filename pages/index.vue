@@ -1,19 +1,54 @@
 <template>
   <div>
-    <div>
+    <div
+      data-aos="zoom-up"
+      data-aos-dealy="0"
+      data-aos-duration="800"
+      data-aos-once="true"
+    >
       <div class="top-image">
         <div class="top-image-content">
           <div class="top-image-content--text">
-            Okna - System - Serwis
+            <span
+              data-aos="fade-out"
+              data-aos-dealy="1000"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              Okna
+            </span>
+            <span
+              data-aos="fade-out"
+              data-aos-dealy="2000"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              - System
+            </span>
+            <span
+              data-aos="zoom-out"
+              data-aos-dealy="3000"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              - Serwis
+            </span>
           </div>
           <div class="fullname-text">
-            Tomasz Liebner
+            <span
+              data-aos="zoom-in-up"
+              data-aos-dealy="3000"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              Tomasz Liebner
+            </span>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div style="height: 20px;text-align: center;">
+      <div class="word-changer-section">
         <transition name="fade">
           <p v-if="show" class="word-changer">
             {{ wordChanger }}
@@ -21,29 +56,64 @@
         </transition>
       </div>
       <div id="o-firmie">
-        <div class="title-section">
-          O firmie
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            O firmie
+          </div>
         </div>
-        <div>
+        <div class="description">
           {{ description }}
         </div>
       </div>
       <b-row class="icons-section">
         <b-col cols="3" lg="3" class="icons-section__item">
-          <i class="material-icons icons-section__icon">border_all</i>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="600"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <i class="material-icons icons-section__icon">border_all</i>
+          </div>
         </b-col>
         <b-col cols="3" lg="3" class="icons-section__item">
-          <i class="material-icons icons-section__icon">build</i>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="800"
+            data-aos-duration="1400"
+            data-aos-once="true"
+          >
+            <i class="material-icons icons-section__icon">build</i>
+          </div>
         </b-col>
         <b-col cols="3" lg="3" class="icons-section__item">
-          <i class="material-icons icons-section__icon">settings</i>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="1000"
+            data-aos-duration="1600"
+            data-aos-once="true"
+          >
+            <i class="material-icons icons-section__icon">settings</i>
+          </div>
         </b-col>
         <b-col cols="3" lg="3" class="icons-section__item">
-          <i class="material-icons icons-section__icon">format_paint</i>
+          <div
+            data-aos="zoom-in"
+            data-aos-dealy="1200"
+            data-aos-duration="1800"
+            data-aos-once="true"
+          >
+            <i class="material-icons icons-section__icon">format_paint</i>
+          </div>
         </b-col>
       </b-row>
       <b-row class="image-section">
-        <b-col lg="6" style="text-align: center;">
+        <b-col md="6" lg="6" style="text-align: center;">
           <div
             data-aos="fade-right"
             data-aos-dealy="400"
@@ -53,7 +123,7 @@
             <b-img src="../assets/images/img2.jpg" fluid class="image"></b-img>
           </div>
         </b-col>
-        <b-col lg="6" style="text-align: center;">
+        <b-col md="6" lg="6" style="text-align: center;">
           <div
             data-aos="fade-left"
             data-aos-dealy="400"
@@ -66,8 +136,15 @@
         </b-col>
       </b-row>
       <div id="uslugi">
-        <div class="title-section">
-          Zakres usług
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Zakres usług
+          </div>
         </div>
         <ul class="service-list">
           <li
@@ -75,10 +152,16 @@
             :key="item.id"
             class="service-list__item"
           >
-            <i class="material-icons service-list--icon">
-              keyboard_arrow_right
-            </i>
-            {{ item }}
+            <div style="display: flex;">
+              <div>
+                <i class="material-icons service-list--icon">
+                  keyboard_arrow_right
+                </i>
+              </div>
+              <div class="description">
+                {{ item }}
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -94,8 +177,15 @@
         </div>
       </div>
       <div id="informacje-dodatkowe">
-        <div class="title-section">
-          Informaje dodatkowe
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Informaje dodatkowe
+          </div>
         </div>
         <ul class="service-list">
           <li
@@ -103,10 +193,16 @@
             :key="item.id"
             class="service-list__item"
           >
-            <i class="material-icons service-list--icon">
-              keyboard_arrow_right
-            </i>
-            {{ item }}
+            <div style="display: flex;">
+              <div>
+                <i class="material-icons service-list--icon">
+                  keyboard_arrow_right
+                </i>
+              </div>
+              <div class="description">
+                {{ item }}
+              </div>
+            </div>
           </li>
         </ul>
         <div>
@@ -122,15 +218,22 @@
         </div>
       </div>
       <div id="kontakt">
-        <div class="title-section">
-          Kontakt
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Kontakt
+          </div>
         </div>
-        <div style="margin-bottom: 40px;">
+        <div class="description" style="margin-bottom: 40px;">
           W przypadku pytań proszę o kontakt na poniżej podany numer telefonu
           lub adres e-mail.
         </div>
         <b-row class="contact-section">
-          <b-col lg="6" class="contact-section__tile-phonenumber">
+          <b-col md="6" lg="6" class="contact-section__tile-phonenumber">
             <div
               data-aos="zoom-in-right"
               data-aos-dealy="400"
@@ -143,7 +246,7 @@
               </div>
             </div>
           </b-col>
-          <b-col lg="6" class="contact-section__tile-email">
+          <b-col md="6" lg="6" class="contact-section__tile-email">
             <div
               data-aos="zoom-in-left"
               data-aos-dealy="400"
@@ -182,7 +285,7 @@ export default {
     return {
       topImage,
       description:
-        'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. W swojej bogatej ofercie świadczymy kompleksową regulację okien i drzwi - plastikowych (PCV), aluminiowych (ALU) oraz drewnianych. Dodatkowo serwisujemy rolety, usuwamy zarysowania, a także zajmujemy się konserwacją okuć. Więcej o świadczonych przez nas usługach znajdziesz w zakładce „Zakres usług". Z pewnością nasz zróżnicowany serwis zaspokoi twoje wszelkie oczekiwania.',
+        'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. W swojej bogatej ofercie świadczymy kompleksową regulację okien i drzwi - plastikowych (PCV), aluminiowych (ALU) oraz drewnianych. Dodatkowo serwisujemy rolety, usuwamy zarysowania, a także zajmujemy się konserwacją okuć. Więcej o świadczonych przez nas usługach znajdziesz w sekcji „Zakres usług". Z pewnością nasz zróżnicowany serwis zaspokoi twoje wszelkie oczekiwania.',
       services: [
         'Montaż okien, drzwi i parapetów',
         'Serwis rolet',
@@ -306,7 +409,6 @@ export default {
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
-  margin-bottom: 80px;
 }
 .top-image-content {
   max-width: 1200px;
@@ -331,10 +433,17 @@ export default {
   letter-spacing: 1px;
   font-weight: 700;
 }
+.word-changer-section {
+  height: 34px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
 .word-changer {
   color: #000;
   letter-spacing: 1px;
   font-size: 22px;
+  margin-bottom: 0;
 }
 .content-subsection {
   //
@@ -425,6 +534,34 @@ export default {
     font-size: 44px;
   }
 }
+.description {
+  letter-spacing: 0.2px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-image-content {
+    &--text {
+      font-size: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .top-image-content {
+    &--text {
+      font-size: 5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-image-content {
+    &--text {
+      font-size: 4vw;
+    }
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .top-image {
     height: 400px;
@@ -436,8 +573,15 @@ export default {
       font-size: 5.4vw;
     }
   }
+  .word-changer-section {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .word-changer {
+    font-size: 18px;
+  }
   .title-section {
-    font-size: 28px;
+    font-size: 26px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
