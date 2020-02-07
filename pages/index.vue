@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="description">
-          {{ description }}
+          <p>{{ description }}</p>
         </div>
       </div>
       <b-row class="icons-section">
@@ -159,7 +159,9 @@
                 </i>
               </div>
               <div class="description">
-                {{ item }}
+                <p style="margin-bottom: 0;">
+                  {{ item }}
+                </p>
               </div>
             </div>
           </li>
@@ -200,7 +202,9 @@
                 </i>
               </div>
               <div class="description">
-                {{ item }}
+                <p style="margin-bottom: 0;">
+                  {{ item }}
+                </p>
               </div>
             </div>
           </li>
@@ -229,8 +233,7 @@
           </div>
         </div>
         <div class="description" style="margin-bottom: 40px;">
-          W przypadku pytań proszę o kontakt na poniżej podany numer telefonu
-          lub adres e-mail.
+          <p>{{ contactDescription }}</p>
         </div>
         <b-row class="contact-section">
           <b-col md="6" lg="6" class="contact-section__tile-phonenumber">
@@ -273,6 +276,19 @@
           </div>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col
+          lg="12"
+          style="text-align: center;margin-bottom: 140px;margin-top: 140px;"
+        >
+          <div style="font-size: 40px;">
+            Okna - System - Serwis
+          </div>
+          <span style="font-weight: 600;letter-spacing: 1px;">
+            Tomasz Libner
+          </span>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
@@ -286,6 +302,8 @@ export default {
       topImage,
       description:
         'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. W swojej bogatej ofercie świadczymy kompleksową regulację okien i drzwi - plastikowych (PCV), aluminiowych (ALU) oraz drewnianych. Dodatkowo serwisujemy rolety, usuwamy zarysowania, a także zajmujemy się konserwacją okuć. Więcej o świadczonych przez nas usługach znajdziesz w sekcji „Zakres usług". Z pewnością nasz zróżnicowany serwis zaspokoi twoje wszelkie oczekiwania.',
+      contactDescription:
+        ' W przypadku pytań proszę o kontakt na poniżej podany numer telefonu lub adres e-mail.',
       services: [
         'Montaż okien, drzwi i parapetów',
         'Serwis rolet',
@@ -337,7 +355,7 @@ export default {
       if (this.counter === this.topWords.length) {
         this.resetCounter()
       }
-      console.log(this.counter)
+
       return this.topWords[this.counter]
     }
   },
@@ -364,7 +382,7 @@ export default {
         {
           name: 'keywords',
           content:
-            'okna, system, serwis, Tomasz Liebner, montaż, okna, rolety, regulacja, drzwi, usterki, szlifowanie, klient, dojazd, przeróbki, zarysowania, nawiewniki, konserwacja'
+            'okna, system, serwis, Tomasz Liebner, montaż, okna, rolety, regulacja, drzwi, usterki, szlifowanie, klient, dojazd, przeróbki, zarysowania, nawiewniki, konserwacja, Wrocław'
         },
         {
           hid: 'og:title',
@@ -379,12 +397,8 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: ''
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: ''
+          content:
+            'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. Dojazd do klienta na terenie D'
         }
       ]
     }
@@ -538,15 +552,6 @@ export default {
 }
 .description {
   letter-spacing: 0.2px;
-}
-.creator-link {
-  text-decoration: none;
-  color: #0066ff;
-
-  &:hover {
-    color: #000;
-    transition: color 0.2s ease;
-  }
 }
 
 @media screen and (min-width: 1200px) {

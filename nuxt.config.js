@@ -12,6 +12,11 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        conent: 'https://okna-system-serwis.pl/okna-system-serwis.png'
       }
     ],
     link: [
