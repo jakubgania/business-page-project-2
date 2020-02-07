@@ -539,14 +539,30 @@ export default {
 .description {
   letter-spacing: 0.2px;
 }
+.creator-link {
+  text-decoration: none;
+  color: #0066ff;
 
-@media only screen and (max-width: 1200px) {
+  &:hover {
+    color: #000;
+    transition: color 0.2s ease;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .top-image-content {
     &--text {
-      font-size: 60px;
+      font-size: 80px;
     }
   }
 }
+// @media only screen and (max-width: 1200px) {
+//   .top-image-content {
+//     &--text {
+//       font-size: 60px;
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 992px) {
   .top-image-content {

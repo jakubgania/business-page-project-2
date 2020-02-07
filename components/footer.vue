@@ -7,7 +7,9 @@
         </div>
         <div class="ml-auto">
           Wykonanie -
-          <a href="https://jakubgania.io">jakubgania.io</a>
+          <a href="https://jakubgania.io" class="creator-link">
+            jakubgania.io
+          </a>
         </div>
       </div>
     </div>
@@ -22,6 +24,15 @@
 }
 .footer-content {
   display: flex;
+}
+.creator-link {
+  color: #0066ff;
+
+  &:hover {
+    color: #000;
+    transition: color 0.2s ease;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 576px) {
