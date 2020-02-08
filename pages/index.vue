@@ -276,19 +276,6 @@
           </div>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col
-          lg="12"
-          style="text-align: center;margin-bottom: 140px;margin-top: 140px;"
-        >
-          <div style="font-size: 40px;">
-            Okna - System - Serwis
-          </div>
-          <span style="font-weight: 600;letter-spacing: 1px;">
-            Tomasz Libner
-          </span>
-        </b-col>
-      </b-row>
     </div>
   </div>
 </template>
