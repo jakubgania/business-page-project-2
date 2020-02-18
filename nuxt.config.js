@@ -1,5 +1,9 @@
 export default {
   mode: 'universal',
+
+  router: {
+    base: process.env.BASE_PATH || ''
+  },
   /*
    ** Headers of the page
    */
@@ -62,6 +66,15 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa'
   ],
+
+  pwa: {
+    workbox: {
+      assetsURLPattern: '/business-page-project-2/_nuxt/',
+      pagesURLPattern: '/business-page-project-2',
+      routerBase: '/business-page-project-2',
+      publicPath: '/business-page-project-2'
+    }
+  },
   /*
    ** Build configuration
    */
