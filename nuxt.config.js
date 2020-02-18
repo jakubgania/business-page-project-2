@@ -1,11 +1,13 @@
+const BASE_PATH = process.env.BASE_PATH || '/business-page-project-2'
+
 export default {
   mode: 'universal',
 
   router: {
-    base: process.env.BASE_PATH || ''
+    base: BASE_PATH
   },
   /*
-   ** Headers of the page
+   ** Headers of the page 
    */
   head: {
     title: process.env.npm_package_name || '',
@@ -25,10 +27,10 @@ export default {
     ],
     link: [
       {
-        rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32',
+        rel: 'icon', type: 'image/png', href: `${BASE_PATH}/favicon-32x32.png`, sizes: '32x32',
       },
       {
-        rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16',
+        rel: 'icon', type: 'image/png', href: `${BASE_PATH}/favicon-16x16.png`, sizes: '16x16',
       }
     ]
   },
@@ -69,10 +71,10 @@ export default {
 
   pwa: {
     workbox: {
-      assetsURLPattern: '/business-page-project-2/_nuxt/',
-      pagesURLPattern: '/business-page-project-2',
-      routerBase: '/business-page-project-2',
-      publicPath: '/business-page-project-2'
+      assetsURLPattern: `${BASE_PATH}/_nuxt/`,
+      pagesURLPattern: BASE_PATH,
+      routerBase: BASE_PATH,
+      publicPath: BASE_PATH
     }
   },
   /*
