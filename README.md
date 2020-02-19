@@ -2,6 +2,8 @@
 
 >
 
+Podgląd projektu - [jakubgania.github.io/business-page-project-2/](https://jakubgania.github.io/business-page-project-2)
+
 Tasks done
 
 - :heavy_check_mark: Utworzenie repozytorium
