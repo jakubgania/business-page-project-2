@@ -2,7 +2,7 @@
 
 >
 
-Podgląd projektu - [jakubgania.github.io/business-page-project-2/](https://jakubgania.github.io/business-page-project-2)
+Podgląd projektu - [jakubgania.github.io/business-page-project-2](https://jakubgania.github.io/business-page-project-2)
 
 Tasks done
 
