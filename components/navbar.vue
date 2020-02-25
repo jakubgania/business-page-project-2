@@ -16,7 +16,7 @@
           href="https://pl-pl.facebook.com/pg/NaprawaOkienRolet/posts/"
           target="_blank"
           rel="noopener noreferrer"
-          class="facebook"
+          class="facebook-nav"
         >
           FACEBOOK
         </a>
@@ -49,7 +49,7 @@
     transition: color 0.2s ease;
   }
 }
-.facebook {
+.facebook-nav {
   font-size: 14px;
   letter-spacing: 0.4px;
   font-weight: 700;

@@ -276,6 +276,36 @@
           </div>
         </b-col>
       </b-row>
+      <div id="uslugi">
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Facebook
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Zachęcam do odwiedzin mojego profilu na Facebooku gdzie często
+            zamieszczam różne informacje oraz można zadać mi pytanie.
+          </p>
+        </div>
+        <div style="text-align: -webkit-center;">
+          <a
+            :href="facebookLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none;"
+          >
+            <div class="button-link facebook">
+              Facebook
+            </div>
+          </a>
+        </div>
+      </div>
       <div
         data-aos="fade-right"
         data-aos-dealy="0"
@@ -284,6 +314,9 @@
       >
         <div class="title-section">
           Opinie
+        </div>
+        <div class="description" style="margin-bottom: 40px;">
+          <p>Zobacz opinie na temat mojej działaności lub napisz swoją.</p>
         </div>
       </div>
     </div>
@@ -325,26 +358,17 @@
           </b-row>
         </b-col>
       </b-row>
-    </div>
-    <div class="container">
-      <div>
-        Zobacz więcej opinii na temat mojej działaności lub napisz swoją
-      </div>
-      <div>
-        <b-row>
-          <b-col lg="6" offset="3">
-            <a
-              :href="googleRecommendationsLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="text-decoration: none;"
-            >
-              <div class="recommendations-google-button-link">
-                Rekomendacje - Google
-              </div>
-            </a>
-          </b-col>
-        </b-row>
+      <div style="text-align: -webkit-center;">
+        <a
+          :href="googleRecommendationsLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none;"
+        >
+          <div class="button-link google">
+            Rekomendacje - Google
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -427,6 +451,7 @@ export default {
             'Chciałam serdecznie podziękować za szybką naprawę. Jestem zadowolona z Państwa usług. Cena nie wygórowana. Będę polecać Wasze usługi znajomym. Dziękuję.'
         }
       ],
+      facebookLink: 'https://pl-pl.facebook.com/pg/NaprawaOkienRolet/posts/',
       googleRecommendationsLink:
         'https://www.google.com/search?q=okna+system+serwis&oq=okna+system+serwis&aqs=chrome.0.69i59j0j69i60j69i61l2.3562j0j4&sourceid=chrome&ie=UTF-8#lrd=0x470fe98f3b81528f:0x730b235a5ef71540,1,,,'
     }
@@ -635,7 +660,6 @@ export default {
   letter-spacing: 0.2px;
 }
 .recommendation-section {
-  margin-bottom: 60px;
   background-color: #0066ff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -655,14 +679,40 @@ export default {
 .recommendation-description {
   letter-spacing: 0.4px;
 }
-.recommendations-google-button-link {
+.button-link {
   width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 60px;
   line-height: 60px;
-  background-color: #ff7733;
   color: white;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.2s ease;
+  transition: color 0.2 ease;
+}
+.google {
+  background-color: #ff7733;
+
+  &:hover {
+    background-color: #e67300;
+    color: #e6e6e6;
+    transition: background-color 0.2s ease;
+    transition: color 0.2 ease;
+  }
+}
+.facebook {
+  margin-top: 40px;
+  background-color: #3360ff;
+
+  &:hover {
+    background-color: #2352f7;
+    color: #e6e6e6;
+    transition: background-color 0.2s ease;
+    transition: color 0.2 ease;
+  }
 }
 
 @media screen and (min-width: 1200px) {
