@@ -12,6 +12,14 @@
           Informacje dodatkowe
         </a>
         <a href="#kontakt" class="anchor-link">Kontakt</a>
+        <a
+          href="https://pl-pl.facebook.com/pg/NaprawaOkienRolet/posts/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="facebook"
+        >
+          FACEBOOK
+        </a>
       </b-navbar-nav>
 
       <b-navbar-nav class="d-block d-sm-block d-md-none">
@@ -40,6 +48,11 @@
     color: #0066ff;
     transition: color 0.2s ease;
   }
+}
+.facebook {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
 }
 @media only screen and (max-width: 576px) {
   .navbar-title {

@@ -276,6 +276,76 @@
           </div>
         </b-col>
       </b-row>
+      <div
+        data-aos="fade-right"
+        data-aos-dealy="0"
+        data-aos-duration="400"
+        data-aos-once="true"
+      >
+        <div class="title-section">
+          Opinie
+        </div>
+      </div>
+    </div>
+    <div class="recommendation-section">
+      <b-row>
+        <b-col lg="10" offset-lg="1">
+          <b-row>
+            <b-col v-for="item in recommendations" :key="item.id" lg="3">
+              <div class="recommendation-box">
+                <div style="padding-bottom: 20px;">
+                  <span class="recommendation-author">
+                    {{ item.author }}
+                  </span>
+                  <div style="margin-top: 10px;">
+                    <i class="material-icons recommendation-icon">
+                      star
+                    </i>
+                    <i class="material-icons recommendation-icon">
+                      star
+                    </i>
+                    <i class="material-icons recommendation-icon">
+                      star
+                    </i>
+                    <i class="material-icons recommendation-icon">
+                      star
+                    </i>
+                    <i class="material-icons recommendation-icon">
+                      star
+                    </i>
+                  </div>
+                </div>
+                <div>
+                  <p class="recommendation-descritpion">
+                    {{ item.description }}
+                  </p>
+                </div>
+              </div>
+            </b-col>
+          </b-row>
+        </b-col>
+      </b-row>
+    </div>
+    <div class="container">
+      <div>
+        Zobacz więcej opinii na temat mojej działaności lub napisz swoją
+      </div>
+      <div>
+        <b-row>
+          <b-col lg="6" offset="3">
+            <a
+              :href="googleRecommendationsLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="text-decoration: none;"
+            >
+              <div class="recommendations-google-button-link">
+                Rekomendacje - Google
+              </div>
+            </a>
+          </b-col>
+        </b-row>
+      </div>
     </div>
   </div>
 </template>
@@ -334,7 +404,31 @@ export default {
         'Dojazd do klienta'
       ],
       counter: 0,
-      show: true
+      show: true,
+      recommendations: [
+        {
+          author: 'Kuba Bojanowski',
+          description:
+            'Usługa regulacji okien wykonana fachowo i terminowo - zgodnie z oczekiwaniami. Z pełną odpowiedzialnością mogę polecić usługi świadczone przez firmę jako rzetelnego i kulturalnego wykonawcę.'
+        },
+        {
+          author: 'Izabela Piechura',
+          description:
+            'Pełen profesjonalizm. Okna chodzą jak marzenie a dodam, że miałam duży problem z zamknięciem zwłaszcza jednego z nich i obawiałam się że jest uszkodzone. Pan pracuje ekspresowo ale nie kosztem jakości. Cena wcale nie wygurowana. Polecam'
+        },
+        {
+          author: 'Paweł Wasiak',
+          description:
+            'Fachowiec jest miła osobą. Rolety naprawione szybko i sprawnie. Ustawione działają bez zarzutu. Końcowa cena, taka jak ustaliliśmy, mimo piętrzących się problemów.Można śmiało polecac ;)'
+        },
+        {
+          author: 'Aga Kac',
+          description:
+            'Chciałam serdecznie podziękować za szybką naprawę. Jestem zadowolona z Państwa usług. Cena nie wygórowana. Będę polecać Wasze usługi znajomym. Dziękuję.'
+        }
+      ],
+      googleRecommendationsLink:
+        'https://www.google.com/search?q=okna+system+serwis&oq=okna+system+serwis&aqs=chrome.0.69i59j0j69i60j69i61l2.3562j0j4&sourceid=chrome&ie=UTF-8#lrd=0x470fe98f3b81528f:0x730b235a5ef71540,1,,,'
     }
   },
   computed: {
@@ -539,6 +633,36 @@ export default {
 }
 .description {
   letter-spacing: 0.2px;
+}
+.recommendation-section {
+  margin-bottom: 60px;
+  background-color: #0066ff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.recommendation-box {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+.recommendation-author {
+  font-size: 22px;
+  color: #e6e6e6;
+}
+.recommendation-icon {
+  color: #ffdb4d;
+}
+.recommendation-description {
+  letter-spacing: 0.4px;
+}
+.recommendations-google-button-link {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ff7733;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1200px) {
