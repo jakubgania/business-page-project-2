@@ -513,6 +513,9 @@ export default {
 </script>
 
 <style>
+body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1000px;
 }
@@ -683,8 +686,6 @@ export default {
   width: 100%;
   max-width: 400px;
   margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
   height: 60px;
   line-height: 60px;
   color: white;
@@ -787,6 +788,11 @@ export default {
   }
   .image {
     max-width: 70%;
+  }
+  .recommendation-box {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 </style>
