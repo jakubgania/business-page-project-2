@@ -400,6 +400,7 @@ export default {
         'Wymiana uszkodzonych elementów okuć',
         'Wymiana szyb zespolonych',
         'Wymianę uszczelek',
+        'Naprawa ram okiennych po włamaniu',
         'Montaż nawiewników okiennych różnych typów',
         'Przeróbki okien z otwieranych na otwieralno-uchylane',
         'Szlifowanie szyb',
