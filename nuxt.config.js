@@ -1,4 +1,4 @@
-const BASE_PATH = process.env.BASE_PATH || '/business-page-project-2'
+const BASE_PATH = process.env.BASE_PATH || '/'
 
 export default {
   mode: 'universal',
