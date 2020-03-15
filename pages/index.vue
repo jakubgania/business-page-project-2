@@ -316,7 +316,7 @@
           Opinie
         </div>
         <div class="description" style="margin-bottom: 40px;">
-          <p>Zobacz opinie na temat mojej działaności lub napisz swoją.</p>
+          <p>Zobacz opinie na temat mojej działalności lub napisz swoją.</p>
         </div>
       </div>
     </div>
