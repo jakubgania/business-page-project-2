@@ -1,4 +1,4 @@
-const BASE_PATH = process.env.BASE_PATH || '/'
+const BASE_PATH = process.env.BASE_PATH || ''
 
 export default {
   mode: 'universal',
@@ -51,10 +51,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    {
-      src:"~/plugins/aos",
-      ssr: false
-    },
+    { src:"~/plugins/aos", ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
