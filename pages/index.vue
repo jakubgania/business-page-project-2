@@ -41,7 +41,7 @@
               data-aos-duration="3000"
               data-aos-once="true"
             >
-              Tomasz Liebner
+              Tomasz Liebner | 721 648 839
             </span>
           </div>
         </div>
@@ -523,6 +523,8 @@ body {
 </style>
 
 <style lang="scss">
+$test-font-size: 18px;
+
 .top-image {
   content: '';
   display: block;
@@ -552,12 +554,14 @@ body {
     letter-spacing: 4px;
     font-size: 3vw;
     font-weight: 800;
+    margin-bottom: 40px;
   }
 }
 .fullname-text {
   color: #fff;
   letter-spacing: 1px;
   font-weight: 700;
+  font-size: 20px;
 }
 .word-changer-section {
   height: 34px;
@@ -586,8 +590,8 @@ body {
   margin-bottom: 0;
 
   &__item {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #000;
     cursor: default;
     background-color: #fff;
@@ -638,6 +642,7 @@ body {
   color: #fff;
   text-align: center;
   line-height: 140px;
+  font-size: $test-font-size;
 
   &__icon {
     vertical-align: middle;
@@ -662,6 +667,7 @@ body {
 }
 .description {
   letter-spacing: 0.2px;
+  font-size: $test-font-size;
 }
 .recommendation-section {
   background-color: #0066ff;
@@ -745,6 +751,9 @@ body {
     &--text {
       font-size: 4vw;
     }
+  }
+  .fullname-text {
+    font-size: 18px;
   }
 }
 
