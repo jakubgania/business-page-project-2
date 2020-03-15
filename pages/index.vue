@@ -444,7 +444,7 @@ export default {
         {
           author: 'Paweł Wasiak',
           description:
-            'Fachowiec jest miła osobą. Rolety naprawione szybko i sprawnie. Ustawione działają bez zarzutu. Końcowa cena, taka jak ustaliliśmy, mimo piętrzących się problemów.Można śmiało polecac ;)'
+            'Fachowiec jest miła osobą. Rolety naprawione szybko i sprawnie. Ustawione działają bez zarzutu. Końcowa cena, taka jak ustaliliśmy, mimo piętrzących się problemów.Można śmiało polecać ;)'
         },
         {
           author: 'Aga Kac',
