@@ -372,7 +372,7 @@
       </div>
     </div>
     <div
-      style="max-width: 1000px;margin: auto;padding-left: 25px;padding-right: 25px;"
+      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
     >
       <div
         data-aos="fade-right"
@@ -558,6 +558,13 @@ body {
 .container {
   max-width: 1000px;
 }
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 </style>
 
 <style lang="scss">
@@ -569,13 +576,17 @@ $test-font-size: 18px;
   position: relative;
   top: 0;
   left: 0;
-  background-image: url(./../assets/images/top-image.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 82, 204, 0.6),
+      rgba(102, 204, 255, 0.4)
+    ),
+    url(./../assets/images/top-image.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
-  background-attachment: fixed;
 }
 .top-image-content {
   max-width: 1200px;
@@ -631,7 +642,7 @@ $test-font-size: 18px;
   &__item {
     padding-top: 12px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #e6e6e6;
     cursor: default;
     background-color: #fff;
     padding-left: 0;
@@ -773,7 +784,7 @@ $test-font-size: 18px;
 @media screen and (min-width: 1200px) {
   .top-image-content {
     &--text {
-      font-size: 80px;
+      font-size: 60px;
     }
   }
 }
@@ -813,6 +824,18 @@ $test-font-size: 18px;
   .fullname-text {
     font-size: 18px;
   }
+  .contact-section {
+    padding-bottom: 40px;
+
+    &__tile-phonenumber {
+      padding-right: 15px;
+      margin-bottom: 2px;
+    }
+
+    &__tile-email {
+      padding-left: 15px;
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -838,6 +861,20 @@ $test-font-size: 18px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .title-section {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .google {
+    width: 92%;
+  }
+  .icons-section {
+    &__icon {
+      font-size: 36px;
+    }
+  }
   .contact-section {
     padding-bottom: 40px;
 
@@ -853,12 +890,14 @@ $test-font-size: 18px;
   .contact-item {
     height: 80px;
     line-height: 80px;
+    font-size: 16px;
   }
   .image {
     max-width: 70%;
   }
   .recommendation-box {
-    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
   }

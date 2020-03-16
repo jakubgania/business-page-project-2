@@ -57,7 +57,7 @@
   z-index: 99;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #fff;
 }
 .list-menu {
   margin-top: 60px;

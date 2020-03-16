@@ -20,7 +20,7 @@
 
 <style lang="scss" scope>
 .footer-wrapper {
-  background-color: #000;
+  background-color: #263238;
   padding-top: 80px;
   padding-bottom: 80px;
 }
