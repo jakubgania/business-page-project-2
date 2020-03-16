@@ -66,52 +66,52 @@
             O firmie
           </div>
         </div>
+        <b-row class="icons-section">
+          <b-col cols="3" lg="3" class="icons-section__item">
+            <div
+              data-aos="zoom-in"
+              data-aos-dealy="600"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <i class="material-icons icons-section__icon">border_all</i>
+            </div>
+          </b-col>
+          <b-col cols="3" lg="3" class="icons-section__item">
+            <div
+              data-aos="zoom-in"
+              data-aos-dealy="800"
+              data-aos-duration="1400"
+              data-aos-once="true"
+            >
+              <i class="material-icons icons-section__icon">build</i>
+            </div>
+          </b-col>
+          <b-col cols="3" lg="3" class="icons-section__item">
+            <div
+              data-aos="zoom-in"
+              data-aos-dealy="1000"
+              data-aos-duration="1600"
+              data-aos-once="true"
+            >
+              <i class="material-icons icons-section__icon">settings</i>
+            </div>
+          </b-col>
+          <b-col cols="3" lg="3" class="icons-section__item">
+            <div
+              data-aos="zoom-in"
+              data-aos-dealy="1200"
+              data-aos-duration="1800"
+              data-aos-once="true"
+            >
+              <i class="material-icons icons-section__icon">format_paint</i>
+            </div>
+          </b-col>
+        </b-row>
         <div class="description">
           <p>{{ description }}</p>
         </div>
       </div>
-      <b-row class="icons-section">
-        <b-col cols="3" lg="3" class="icons-section__item">
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="600"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <i class="material-icons icons-section__icon">border_all</i>
-          </div>
-        </b-col>
-        <b-col cols="3" lg="3" class="icons-section__item">
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="800"
-            data-aos-duration="1400"
-            data-aos-once="true"
-          >
-            <i class="material-icons icons-section__icon">build</i>
-          </div>
-        </b-col>
-        <b-col cols="3" lg="3" class="icons-section__item">
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="1000"
-            data-aos-duration="1600"
-            data-aos-once="true"
-          >
-            <i class="material-icons icons-section__icon">settings</i>
-          </div>
-        </b-col>
-        <b-col cols="3" lg="3" class="icons-section__item">
-          <div
-            data-aos="zoom-in"
-            data-aos-dealy="1200"
-            data-aos-duration="1800"
-            data-aos-once="true"
-          >
-            <i class="material-icons icons-section__icon">format_paint</i>
-          </div>
-        </b-col>
-      </b-row>
       <b-row class="image-section">
         <b-col md="6" lg="6" style="text-align: center;">
           <div
@@ -575,6 +575,7 @@ $test-font-size: 18px;
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
+  background-attachment: fixed;
 }
 .top-image-content {
   max-width: 1200px;
@@ -692,7 +693,8 @@ $test-font-size: 18px;
   }
 }
 .icons-section {
-  margin-top: 60px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 
   &__item {
     text-align: center;
