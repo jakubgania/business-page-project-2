@@ -286,9 +286,7 @@
         </a>
       </div>
     </div>
-    <div
-      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
-    >
+    <div class="container">
       <div
         data-aos="fade-right"
         data-aos-dealy="0"
@@ -319,9 +317,7 @@
         </b-col>
       </b-row>
     </div>
-    <div
-      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
-    >
+    <div class="container">
       <div id="uslugi">
         <div
           data-aos="fade-right"
@@ -353,9 +349,7 @@
         </div>
       </div>
     </div>
-    <div
-      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
-    >
+    <div class="container">
       <div id="kontakt">
         <div
           data-aos="fade-right"
@@ -695,9 +689,9 @@ $test-font-size: 18px;
   }
 }
 .contact-item {
-  background-color: #000;
+  background-color: #eceff1;
   height: 140px;
-  color: #fff;
+  color: #000;
   text-align: center;
   line-height: 140px;
   font-size: $test-font-size;
@@ -722,6 +716,7 @@ $test-font-size: 18px;
 
   &__icon {
     font-size: 44px;
+    color: #e6e6e6;
   }
 }
 .description {
@@ -732,6 +727,7 @@ $test-font-size: 18px;
   background-color: #0066ff;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 60px;
 }
 .recommendation-box {
   margin: 20px;
@@ -817,6 +813,9 @@ $test-font-size: 18px;
     &:nth-child(4) {
       margin-top: 25px;
     }
+  }
+  .recommendation-section {
+    margin-bottom: 20px;
   }
   .recommendation-box {
     margin: 20px;
