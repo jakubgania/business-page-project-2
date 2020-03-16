@@ -318,38 +318,6 @@
       </b-row>
     </div>
     <div class="container">
-      <div id="uslugi">
-        <div
-          data-aos="fade-right"
-          data-aos-dealy="0"
-          data-aos-duration="400"
-          data-aos-once="true"
-        >
-          <div class="title-section">
-            Facebook
-          </div>
-        </div>
-        <div class="description">
-          <p>
-            Zachęcam do odwiedzin mojego profilu na Facebooku gdzie często
-            zamieszczam różne informacje oraz można zadać mi pytanie.
-          </p>
-        </div>
-        <div style="text-align: -webkit-center;">
-          <a
-            :href="facebookLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="text-decoration: none;"
-          >
-            <div class="button-link facebook">
-              Facebook
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container">
       <div id="kontakt">
         <div
           data-aos="fade-right"
@@ -405,6 +373,38 @@
           </div>
         </b-col>
       </b-row>
+    </div>
+    <div class="container" style="margin-bottom: 80px;">
+      <div id="uslugi">
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Facebook
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Zachęcam do odwiedzin mojego profilu na Facebooku gdzie często
+            zamieszczam różne informacje oraz można zadać mi pytanie.
+          </p>
+        </div>
+        <div style="text-align: -webkit-center;">
+          <a
+            :href="facebookLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none;"
+          >
+            <div class="button-link facebook">
+              Facebook
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
