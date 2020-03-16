@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: relative;z-index: 1000;">
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand href="#" class="navbar-title">
         Okna - System - Serwis
@@ -22,7 +22,11 @@
         </a>
       </b-navbar-nav>
 
-      <b-navbar-nav class="d-block d-sm-block d-md-none">
+      <b-navbar-nav
+        class="d-block d-sm-block d-md-none"
+        @click="$emit('switchNavigationDrawer')"
+        style="cursor: default;"
+      >
         <i class="material-icons navbar-menu-icon">
           drag_handle
         </i>
