@@ -221,91 +221,6 @@
           </iframe>
         </div>
       </div>
-      <div id="kontakt">
-        <div
-          data-aos="fade-right"
-          data-aos-dealy="0"
-          data-aos-duration="400"
-          data-aos-once="true"
-        >
-          <div class="title-section">
-            Kontakt
-          </div>
-        </div>
-        <div class="description" style="margin-bottom: 40px;">
-          <p>{{ contactDescription }}</p>
-        </div>
-        <b-row class="contact-section">
-          <b-col md="6" lg="6" class="contact-section__tile-phonenumber">
-            <div
-              data-aos="zoom-in-right"
-              data-aos-dealy="400"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <div class="contact-item">
-                <i class="material-icons contact-item__icon">phone_iphone</i>
-                721 648 839
-              </div>
-            </div>
-          </b-col>
-          <b-col md="6" lg="6" class="contact-section__tile-email">
-            <div
-              data-aos="zoom-in-left"
-              data-aos-dealy="400"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <div class="contact-item">
-                <i class="material-icons contact-item__icon">email</i>
-                okna.system.serwis@gmail.com
-              </div>
-            </div>
-          </b-col>
-        </b-row>
-      </div>
-      <b-row class="image-section">
-        <b-col lg="12" style="text-align: center;">
-          <div
-            data-aos="fade-up"
-            data-aos-dealy="400"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <b-img src="../assets/images/img3.jpg" fluid class="image"></b-img>
-          </div>
-        </b-col>
-      </b-row>
-      <div id="uslugi">
-        <div
-          data-aos="fade-right"
-          data-aos-dealy="0"
-          data-aos-duration="400"
-          data-aos-once="true"
-        >
-          <div class="title-section">
-            Facebook
-          </div>
-        </div>
-        <div class="description">
-          <p>
-            Zachęcam do odwiedzin mojego profilu na Facebooku gdzie często
-            zamieszczam różne informacje oraz można zadać mi pytanie.
-          </p>
-        </div>
-        <div style="text-align: -webkit-center;">
-          <a
-            :href="facebookLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="text-decoration: none;"
-          >
-            <div class="button-link facebook">
-              Facebook
-            </div>
-          </a>
-        </div>
-      </div>
       <div
         data-aos="fade-right"
         data-aos-dealy="0"
@@ -401,6 +316,99 @@
           class="gallery-item"
         >
           <b-img :src="item" fluid class="gallery-image"></b-img>
+        </b-col>
+      </b-row>
+    </div>
+    <div
+      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
+    >
+      <div id="uslugi">
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Facebook
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Zachęcam do odwiedzin mojego profilu na Facebooku gdzie często
+            zamieszczam różne informacje oraz można zadać mi pytanie.
+          </p>
+        </div>
+        <div style="text-align: -webkit-center;">
+          <a
+            :href="facebookLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none;"
+          >
+            <div class="button-link facebook">
+              Facebook
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      style="max-width: 1000px;margin: auto;padding-left: 15px;padding-right: 15px;"
+    >
+      <div id="kontakt">
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            Kontakt
+          </div>
+        </div>
+        <div class="description" style="margin-bottom: 40px;">
+          <p>{{ contactDescription }}</p>
+        </div>
+        <b-row class="contact-section">
+          <b-col md="6" lg="6" class="contact-section__tile-phonenumber">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-dealy="400"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <div class="contact-item">
+                <i class="material-icons contact-item__icon">phone_iphone</i>
+                721 648 839
+              </div>
+            </div>
+          </b-col>
+          <b-col md="6" lg="6" class="contact-section__tile-email">
+            <div
+              data-aos="zoom-in-left"
+              data-aos-dealy="400"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <div class="contact-item">
+                <i class="material-icons contact-item__icon">email</i>
+                okna.system.serwis@gmail.com
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+      </div>
+      <b-row class="image-section">
+        <b-col lg="12" style="text-align: center;">
+          <div
+            data-aos="fade-up"
+            data-aos-dealy="400"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <b-img src="../assets/images/img3.jpg" fluid class="image"></b-img>
+          </div>
         </b-col>
       </b-row>
     </div>
