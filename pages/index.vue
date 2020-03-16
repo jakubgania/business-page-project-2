@@ -769,9 +769,6 @@ $test-font-size: 18px;
 .gallery-item {
   text-align: center;
 }
-.gallery-image {
-  //
-}
 
 @media screen and (min-width: 1200px) {
   .top-image-content {
@@ -780,13 +777,12 @@ $test-font-size: 18px;
     }
   }
 }
-// @media only screen and (max-width: 1200px) {
-//   .top-image-content {
-//     &--text {
-//       font-size: 60px;
-//     }
-//   }
-// }
+@media only screen and (max-width: 1200px) {
+  .recommendation-box {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 @media only screen and (max-width: 992px) {
   .top-image-content {
@@ -802,6 +798,9 @@ $test-font-size: 18px;
     &:nth-child(4) {
       margin-top: 25px;
     }
+  }
+  .recommendation-box {
+    margin: 20px;
   }
 }
 
