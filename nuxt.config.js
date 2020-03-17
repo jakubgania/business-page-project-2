@@ -43,7 +43,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        conent: 'https://okna-system-serwis.pl/okna-system-serwis-logo.png'
+        content: 'https://okna-system-serwis.pl/okna-system-serwis-logo.png'
       }
     ],
     link: [
@@ -94,6 +94,9 @@ export default {
   ],
 
   pwa: {
+    meta: {
+      twitterCard: 'summary_large_image'
+    },
     workbox: {
       assetsURLPattern: `${BASE_PATH}/_nuxt/`,
       pagesURLPattern: BASE_PATH,

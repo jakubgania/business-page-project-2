@@ -546,6 +546,16 @@ export default {
           property: 'og:description',
           content:
             'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. Dojazd do klienta na terenie D'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://okna-system-serwis.pl/okna-system-serwis-logo.png'
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://okna-system-serwis.pl/okna-system-serwis-logo.png'
         }
       ]
     }
@@ -819,6 +829,8 @@ $test-font-size: 18px;
   }
   .recommendation-box {
     margin: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
