@@ -6,6 +6,27 @@ export default {
   router: {
     base: BASE_PATH
   },
+
+  manifest: {
+    lang: 'pl',
+    name: 'Okna - System - Serwis | Tomasz Liebner',
+    description: 'Nasza firma od wielu lat świadczy usługi związane z szeroko rozumianym serwisem okien. Specjalizujemy się w serwisie okien, rolet i drzwi. Zapraszam do kontaktu.',
+    icons: [
+      {
+        src: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png"
+      }
+    ],
+    theme_color: "#000000",
+    background_color: "#000000"
+  },
+
   /*
    ** Headers of the page 
    */
@@ -22,7 +43,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        conent: 'https://okna-system-serwis.pl/okna-system-serwis.png'
+        conent: 'https://okna-system-serwis.pl/okna-system-serwis-logo.png'
       }
     ],
     link: [

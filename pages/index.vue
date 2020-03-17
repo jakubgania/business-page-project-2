@@ -539,7 +539,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'http://okna-system-serwis.pl'
+          content: 'https://okna-system-serwis.pl'
         },
         {
           hid: 'og:description',
