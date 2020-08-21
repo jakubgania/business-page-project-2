@@ -34,6 +34,19 @@
               - Serwis
             </span>
           </div>
+          <div
+            class="fullname-text"
+            style="margin-bottom: 10px;font-size: 22px;"
+          >
+            <span
+              data-aos="zoom-in-up"
+              data-aos-dealy="3000"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              Naprawa okien i rolet
+            </span>
+          </div>
           <div class="fullname-text">
             <span
               data-aos="zoom-in-up"
@@ -415,6 +428,10 @@ import image1 from './../assets/images/image-1.jpg'
 import image2 from './../assets/images/image-2.jpg'
 import image3 from './../assets/images/image-3.jpg'
 import image4 from './../assets/images/image-4.jpg'
+import image5 from './../assets/images/image-5.jpg'
+import image6 from './../assets/images/image-6.jpg'
+import image7 from './../assets/images/image-7.jpg'
+import image8 from './../assets/images/image-8.jpg'
 
 export default {
   data() {
@@ -494,7 +511,16 @@ export default {
       facebookLink: 'https://pl-pl.facebook.com/pg/NaprawaOkienRolet/posts/',
       googleRecommendationsLink:
         'https://www.google.com/search?q=okna+system+serwis&oq=okna+system+serwis&aqs=chrome.0.69i59j0j69i60j69i61l2.3562j0j4&sourceid=chrome&ie=UTF-8#lrd=0x470fe98f3b81528f:0x730b235a5ef71540,1,,,',
-      galleryImages: [image1, image2, image3, image4]
+      galleryImages: [
+        image1,
+        image2,
+        image3,
+        image4,
+        image5,
+        image6,
+        image7,
+        image8
+      ]
     }
   },
   computed: {
@@ -616,7 +642,7 @@ $test-font-size: 18px;
     letter-spacing: 4px;
     font-size: 3vw;
     font-weight: 800;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .fullname-text {
@@ -790,6 +816,8 @@ $test-font-size: 18px;
 .gallery-section {
   margin-top: 120px;
   margin-bottom: 120px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .gallery-item {
   text-align: center;
@@ -801,11 +829,51 @@ $test-font-size: 18px;
       font-size: 60px;
     }
   }
+  .gallery-item {
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+    &:nth-child(4) {
+      margin-top: 20px;
+    }
+    &:nth-child(5) {
+      margin-top: 20px;
+    }
+    &:nth-child(6) {
+      margin-top: 20px;
+    }
+    &:nth-child(7) {
+      margin-top: 20px;
+    }
+    &:nth-child(8) {
+      margin-top: 20px;
+    }
+  }
 }
 @media only screen and (max-width: 1200px) {
   .recommendation-box {
     margin: 0;
     padding: 0;
+  }
+  .gallery-item {
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+    &:nth-child(4) {
+      margin-top: 20px;
+    }
+    &:nth-child(5) {
+      margin-top: 20px;
+    }
+    &:nth-child(6) {
+      margin-top: 20px;
+    }
+    &:nth-child(7) {
+      margin-top: 20px;
+    }
+    &:nth-child(8) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -813,15 +881,6 @@ $test-font-size: 18px;
   .top-image-content {
     &--text {
       font-size: 5vw;
-    }
-  }
-  .gallery-item {
-    &:nth-child(3) {
-      margin-top: 25px;
-    }
-
-    &:nth-child(4) {
-      margin-top: 25px;
     }
   }
   .recommendation-section {
@@ -936,6 +995,22 @@ $test-font-size: 18px;
     }
 
     &:nth-child(4) {
+      margin-top: 12px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 12px;
+    }
+
+    &:nth-child(6) {
+      margin-top: 12px;
+    }
+
+    &:nth-child(7) {
+      margin-top: 12px;
+    }
+
+    &:nth-child(8) {
       margin-top: 12px;
     }
   }
