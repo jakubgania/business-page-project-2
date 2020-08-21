@@ -69,16 +69,6 @@
         </transition>
       </div>
       <div id="o-firmie">
-        <div
-          data-aos="fade-right"
-          data-aos-dealy="0"
-          data-aos-duration="400"
-          data-aos-once="true"
-        >
-          <div class="title-section">
-            O firmie
-          </div>
-        </div>
         <b-row class="icons-section">
           <b-col cols="3" lg="3" class="icons-section__item">
             <div
@@ -121,6 +111,16 @@
             </div>
           </b-col>
         </b-row>
+        <div
+          data-aos="fade-right"
+          data-aos-dealy="0"
+          data-aos-duration="400"
+          data-aos-once="true"
+        >
+          <div class="title-section">
+            O firmie
+          </div>
+        </div>
         <div class="description">
           <p>{{ description }}</p>
         </div>
@@ -320,13 +320,18 @@
     <div class="gallery-section">
       <b-row>
         <b-col
-          v-for="item in galleryImages"
+          v-for="(item, index) in galleryImages"
           :key="item.id"
           sm="6"
           lg="3"
           class="gallery-item"
         >
-          <b-img :src="item" fluid class="gallery-image"></b-img>
+          <b-img
+            :src="item"
+            fluid
+            :alt="altText + (index + 1)"
+            class="gallery-image"
+          ></b-img>
         </b-col>
       </b-row>
     </div>
@@ -511,6 +516,7 @@ export default {
       facebookLink: 'https://pl-pl.facebook.com/pg/NaprawaOkienRolet/posts/',
       googleRecommendationsLink:
         'https://www.google.com/search?q=okna+system+serwis&oq=okna+system+serwis&aqs=chrome.0.69i59j0j69i60j69i61l2.3562j0j4&sourceid=chrome&ie=UTF-8#lrd=0x470fe98f3b81528f:0x730b235a5ef71540,1,,,',
+      altText: 'Naprawa usterki, zdjęcie - ',
       galleryImages: [
         image1,
         image2,
@@ -663,9 +669,6 @@ $test-font-size: 18px;
   font-size: 22px;
   margin-bottom: 0;
 }
-.content-subsection {
-  //
-}
 .title-section {
   color: #182c36;
   font-size: 40px;
@@ -742,7 +745,7 @@ $test-font-size: 18px;
   }
 }
 .icons-section {
-  margin-top: 0px;
+  margin-top: 60px;
   margin-bottom: 40px;
 
   &__item {
@@ -768,7 +771,7 @@ $test-font-size: 18px;
 .recommendation-box {
   margin: 20px;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 .recommendation-author {
   font-size: 22px;
@@ -786,7 +789,7 @@ $test-font-size: 18px;
   margin-top: 20px;
   height: 60px;
   line-height: 60px;
-  color: white;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease;
