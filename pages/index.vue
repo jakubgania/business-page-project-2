@@ -833,12 +833,6 @@ $test-font-size: 18px;
     }
   }
   .gallery-item {
-    &:nth-child(3) {
-      margin-top: 20px;
-    }
-    &:nth-child(4) {
-      margin-top: 20px;
-    }
     &:nth-child(5) {
       margin-top: 20px;
     }
@@ -859,6 +853,12 @@ $test-font-size: 18px;
     padding: 0;
   }
   .gallery-item {
+    &:nth-child(1) {
+      margin-top: 20px;
+    }
+    &:nth-child(2) {
+      margin-top: 20px;
+    }
     &:nth-child(3) {
       margin-top: 20px;
     }
