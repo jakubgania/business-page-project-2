@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="button-section">
-        <button type="button" class="accept-rules-button" @click="accept()">
+        <button @click="accept()" type="button" class="accept-rules-button">
           akceptuję
         </button>
       </div>
