@@ -538,15 +538,15 @@ export default {
       return this.topWords[this.counter]
     }
   },
-  methods: {
-    resetCounter() {
-      this.counter = 0
-    }
-  },
   mounted() {
     setInterval(() => {
       ++this.counter
     }, 2400)
+  },
+  methods: {
+    resetCounter() {
+      this.counter = 0
+    }
   },
   head() {
     return {
