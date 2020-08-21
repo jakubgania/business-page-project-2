@@ -23,8 +23,8 @@
       </b-navbar-nav>
 
       <b-navbar-nav
-        class="d-block d-sm-block d-md-none"
         @click="$emit('switchNavigationDrawer')"
+        class="d-block d-sm-block d-md-none"
         style="cursor: default;"
       >
         <i class="material-icons navbar-menu-icon">
