@@ -328,8 +328,8 @@
         >
           <b-img
             :src="item"
-            fluid
             :alt="altText + (index + 1)"
+            fluid
             class="gallery-image"
           ></b-img>
         </b-col>
